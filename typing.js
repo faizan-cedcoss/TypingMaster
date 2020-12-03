@@ -1,16 +1,20 @@
 
-var a,c,b;
+var a,c,b,d;
 function start()
 {	
-	a=document.querySelector('#ques').value ;
-	
+	a=document.querySelector('#ques').value;	
 	var s=0;
 	var m=0;
 	var h=0;
-
+	b=1;
+	d=0;
+	for (var i = 0; i < a.length; i++) {
+		if(a.charAt(i)==' ')
+			b++;
+	}
 	var z=setInterval(timer,1000);
 	function timer()
-	{
+	{	d++;
 		c=document.getElementById('ans').value;
 		if (s<10)
 			document.getElementById('sec').innerHTML="0"+s;
@@ -33,9 +37,10 @@ function start()
 		if(c==a)
 		{
 			clearInterval(z);
+			var speed=parseInt((b/d)*60);
+			document.getElementById('wpm').innerHTML=speed;
 		}
-	}
-		
+	}		
 	}
 	function reset()
 	{
