@@ -44,6 +44,6 @@ function start()
 	}
 	function reset()
 	{
-		window.location.href="typing.html";
+		window.location.href="index.html";
 	}
 
