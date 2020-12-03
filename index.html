@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Typing Master</title>
+	    <style>
+	    	.div1{
+	    		width: 100%;
+	    		padding: 50px;
+	    		text-align: center;
+	    		background-color: #000066;
+	    		color: white;
+	    	}
+	    	.div2{
+	    		width: 100%;
+	    		padding: 50px;
+	    		text-align: center;
+	    		background-color: #00e6e6;
+	    		color: white;
+	    	}
+	    	.div3{
+	    		width: 100%;
+	    	}
+	    	.div4{
+	    		padding: 10px;
+	    		background-color: #eee;
+	    		color: black;
+	    		margin-top: 15px !important ;
+	    		margin-bottom: 15px !important ;
+	    	}
+	    	.div5{
+	    		width: 50%;
+	    	}
+	    	.p-style{
+	    		position: relative;
+	    		margin: 0px auto;
+	    		width: 50%;
+
+	    	}
+	    	.input-style{
+	    		left: 24%;
+	    		border: 10px solid grey;
+	    		height: 150px;
+	    		margin-bottom: 15px !important; 
+
+	    	}
+	    	.input-style2{
+	    		left: 24%;
+	    		font-size: 24px;
+	    	}
+	    	.button-style{
+	    		padding: 16px;
+	    		background-color: #ff6600;
+	    		font-weight: 700px;
+	    		color: white;
+	    		float: right;
+	    		font-size: 22px;
+	    		margin-top: 50px;
+
+	    	}
+	    	.timer{
+	    		font-size: 50px;
+	    		color: black;
+	    		width: 50%;
+	    		float: left;
+	    	}
+	    	
+	    </style>
+	</head>
+	<body>
+		<div class="div1">
+			<h1 style="color: white">Test Your Typing test</h1>
+		</div>
+		<div class="div2">
+			<h3 class="p-style"  style="color: white">
+				This is a typing test. Your goal is to duplicate the provided text, EXACTLY, in the field below. The timer starts when you start typing, and only stops when you match this text exactly. Good Luck!
+			</h3>
+		</div>
+		<div  class="div3">
+			<input class="p-style div4 input-style2" id="ques" value="This is a test, please test your speed.">
+		</div>
+		<div class="div3">
+		<input type="text" name="" step="any" class="p-style input-style" id="ans" onclick="start()" placeholder="The Clock starts when you start typing.">
+	</div>
+	<div>
+		<div class="p-style">
+			<div class="time"><p class="timer"><span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span></p></div>
+		<button class="button-style" onclick="reset()">Start Over</button>
+		</div>
+	</div>
+		<script src="typing.js"></script>
+	</body>
+</html>
