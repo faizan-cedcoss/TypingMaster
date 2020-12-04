@@ -5,16 +5,20 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <title>Typing Master</title>
 	    <style>
+	    	body{
+	    		margin: 0;
+	    		padding: 0;
+	    	}
 	    	.div1{
 	    		width: 100%;
-	    		padding: 50px;
+	    		padding: 50px 0 50px 0;
 	    		text-align: center;
 	    		background-color: #000066;
 	    		color: white;
 	    	}
 	    	.div2{
 	    		width: 100%;
-	    		padding: 50px;
+	    		padding: 50px 0 50px 0;
 	    		text-align: center;
 	    		background-color: #00e6e6;
 	    		color: white;
@@ -42,8 +46,7 @@
 	    		left: 24%;
 	    		border: 10px solid grey;
 	    		height: 150px;
-	    		margin-bottom: 15px !important; 
-
+	    		margin-bottom: 15px !important;
 	    	}
 	    	.input-style2{
 	    		left: 24%;
@@ -81,10 +84,12 @@
 			</h3>
 		</div>
 		<div  class="div3">
-			<input class="p-style div4 input-style2" id="ques" value="This is a test, please test your speed.">
+			<p class="p-style div4 " id="ques">
+				This is a test, please test your speed.
+			</p>
 		</div>
 		<div class="div3">
-		<input type="text" name="" step="any" class="p-style input-style" id="ans" onclick="start()" placeholder="The Clock starts when you start typing.">
+		<input type="text" name="" step="any" class="p-style input-style" id="ans" onkeypress="start1()" placeholder="The Clock starts when you start typing.">
 	</div>
 	<div>
 		<div class="p-style">
