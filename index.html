@@ -36,6 +36,7 @@
 	    	}
 	    	.div5{
 	    		width: 50%;
+				margin: 0px auto;
 	    	}
 	    	.p-style{
 	    		position: relative;
@@ -62,7 +63,6 @@
 	    		float: right;
 	    		font-size: 22px;
 	    		margin-top: 50px;
-
 	    	}
 	    	.timer{
 	    		font-size: 50px;
@@ -74,8 +74,7 @@
 	    	.font-s{
 	    		font-size: 22px;
 	    		color: #000066;
-	    	}
-	    	
+	    	}	    	
 	    </style>
 	</head>
 	<body>
@@ -93,14 +92,19 @@
 			</p>
 		</div>
 		<div class="div3">
-		<input type="text" name="" step="any" class="p-style input-style" id="ans" onkeypress="start1()" placeholder="The Clock starts when you start typing.">
+		<input type="text" name="" step="any" class="p-style input-style" id="ans" onkeyup="start1()" placeholder="The Clock starts when you start typing.">
 	</div>
-	<div>
+	<div style="height: 170px;">
 		<div class="p-style">
-			<div class="time"><p class="timer"><span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span><br><span class="font-s"> Words per Minute: <span id="wpm">0</span></span></p></div>
+			<div class="time"><p class="timer"><span id="hour">00</span>:<span id="min">00</span>:<span id="sec">00</span><br></p></div>
 		<button class="button-style" onclick="reset()">Start Over</button>
 		</div>
 	</div>
+	<div style="width: 100%;">
+		<div class="div5">
+			<span class="font-s"> Words per Minute: <span id="wpm">0</span></span><br>
+			<span class="font-s"> Accuracy: <span id="accuracy">0</span> %</span>
+		</div></div>
 		<script src="typing.js"></script>
 	</body>
 </html>
